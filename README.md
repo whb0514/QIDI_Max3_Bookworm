@@ -1,5 +1,5 @@
 ### Disclaimer:
-After careful consideration, our team has decided that system upgrades will not be covered under the after-sales warranty. Therefore, this image is released by me personally. Before proceeding with the upgrade, please ensure you have the necessary basic tools, such as an SD card reader and an eMMC adapter. Due to cost considerations (mainly shipping costs), please do not request free tools or other items from our after-sales service.
+After careful consideration, our team has decided that system upgrades will not be covered under the after-sales warranty. Therefore, this image is released by me personally. Before proceeding with the upgrade, please ensure you have the necessary basic tools, such as an SD card, an SD card reader and an eMMC adapter. Due to cost considerations (mainly shipping costs), please do not request free tools or other items from our after-sales service.
 
 Before starting, please make sure you have basic knowledge of the Linux system and have made backups to prevent any accidents during the upgrade. For instructions on how to create a backup image, please refer to this link.
 https://github.com/QIDITECH/QIDI_MAX3/issues/46#issuecomment-2118563353
@@ -19,7 +19,7 @@ pwd: makerbase
 ### Update Process:
 If you don't have the option to connect via Ethernet, it is recommended to flash the MCU firmware first before writing the image. This will prevent MCU errors that could cause the UI to fail to navigate to the network connection screen.
 
-Due to the large size of the image, it is compressed using the highly efficient 7z format. After decompressing, connect the eMMC to the computer using an SD card reader and use an image writing tool (such as BalenaEtcher) to write the image. You will also need to flash the onboard MCU firmware and update the UI. Refer to this link for instructions on flashing the MCU firmware (Use the bin and uf2 files provided here).
+Due to the large size of the image, it is compressed using the highly efficient 7z format. After decompressing, connect the eMMC to the computer using an SD card reader and use an image writing tool (such as BalenaEtcher) to write the image. You will also need to flash the onboard MCU firmware and update the UI. Refer to this link for instructions on flashing the MCU firmware (Use the bin and uf2 files provided in this 7z file).
 https://github.com/QIDITECH/QIDI_PLUS3/issues/27#issuecomment-2073932891
 
 ### Modifications to Klipper and Moonraker:
