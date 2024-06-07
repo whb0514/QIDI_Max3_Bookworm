@@ -73,7 +73,9 @@ There should be no further updates for this image, but I will try to answer rela
 
 ### Adaptation to Other Models:
 The Smart3 model may have different screen control systems from the Max3 and may not be compatible. 
-The Plus3 model share the same boards and screen with Max3 so this image is also applicable to Plus3.
+
+
+The Plus3 model share the same boards and screen with Max3 so this image is also applicable to Plus3, as long as you modify the printer.cfg accordingly
 
 ### Open Source Software Repositories Used:
 https://github.com/Klipper3d/klipper </br>
