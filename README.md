@@ -46,6 +46,8 @@ On the first boot, the WiFi function may not work properly because the network i
 
 Edit these setting which are used for clash proxy (I forget to remove these, maybe make a new image later)
 ```bash
+# Login as root
+
 sudo nano /etc/environment
 # remove these setting
 export http_proxy="http://127.0.0.1:7890"
