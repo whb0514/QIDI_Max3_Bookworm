@@ -44,6 +44,26 @@ Due to the Max3 series' inability to maintain Z-axis height during a power outag
 ### Network:
 On the first boot, the WiFi function may not work properly because the network interface renaming has not yet been applied. Restarting should resolve this issue.
 
+Edit these setting which are used for clash proxy (I forget to remove these, maybe make a new image later)
+```
+sudo nano /etc/environment
+# remove these setting
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
+export no_proxy="localhost, 127.0.0.1, *edu.cn"
+
+sudo visudo
+# remove these setting
+Defaults env_keep+="http_proxy https_proxy no_proxy"
+
+nano ~/.gitconfig
+# remove these setting
+[http]
+  proxy=http://127.0.0.1:7890
+[https]
+  proxy=http://127.0.0.1:7890
+```
+
 ### Future Updates:
 There should be no further updates for this image, but I will try to answer related questions that arise during use.
 
