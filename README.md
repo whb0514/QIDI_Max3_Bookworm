@@ -62,6 +62,10 @@ nano ~/.gitconfig
   proxy=http://127.0.0.1:7890
 [https]
   proxy=http://127.0.0.1:7890
+
+# change apt source
+rm /etc/apt/sources.list
+mv /etc/apt/sources.list.bak /etc/apt/sources.list
 ```
 
 ### Future Updates:
