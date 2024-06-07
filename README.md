@@ -72,7 +72,8 @@ mv /etc/apt/sources.list.bak /etc/apt/sources.list
 There should be no further updates for this image, but I will try to answer related questions that arise during use.
 
 ### Adaptation to Other Models:
-The Plus3 and Smart3 models may have different screen control systems from the Max3 and may not be compatible. Additionally, the printer.cfg configuration will need adjustments.
+The Smart3 model may have different screen control systems from the Max3 and may not be compatible. 
+The Plus3 model share the same boards and screen with Max3 so this image is also applicable to Plus3.
 
 ### Open Source Software Repositories Used:
 https://github.com/Klipper3d/klipper </br>
