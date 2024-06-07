@@ -45,7 +45,7 @@ Due to the Max3 series' inability to maintain Z-axis height during a power outag
 On the first boot, the WiFi function may not work properly because the network interface renaming has not yet been applied. Restarting should resolve this issue.
 
 Edit these setting which are used for clash proxy (I forget to remove these, maybe make a new image later)
-```
+```bash
 sudo nano /etc/environment
 # remove these setting
 export http_proxy="http://127.0.0.1:7890"
