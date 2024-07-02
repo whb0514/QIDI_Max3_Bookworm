@@ -22,7 +22,7 @@ If you don't have the option to connect via Ethernet, it is recommended to flash
 Due to the large size of the image, it is compressed using the highly efficient 7z format. After decompressing, connect the eMMC to the computer using an SD card reader and use an image writing tool (such as BalenaEtcher) to write the image. You will also need to flash the onboard MCU firmware and update the UI. Refer to this link for instructions on flashing the MCU firmware (Use the bin and uf2 files provided in this 7z file).
 https://github.com/QIDITECH/QIDI_PLUS3/issues/27#issuecomment-2073932891
 
-Note: After successfully flashing the new image, please avoid upgrading firmware and hardware-related packages during apt upgrade. This may cause the screen control program to fail to start properly.
+**Note:** After successfully flashing the new image, please avoid upgrading firmware and hardware-related packages during `apt upgrade`. This may cause the screen control program to fail to start properly.
 
 ### Modifications to Klipper and Moonraker:
 This image still modifies some Klipper and Moonraker files to adapt to the screen control system. The related modifications and instructions are placed in folders under /root.
