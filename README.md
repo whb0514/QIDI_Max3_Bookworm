@@ -22,6 +22,12 @@ If you don't have the option to connect via Ethernet, it is recommended to flash
 Due to the large size of the image, it is compressed using the highly efficient 7z format. After decompressing, connect the eMMC to the computer using an SD card reader and use an image writing tool (such as BalenaEtcher) to write the image. You will also need to flash the onboard MCU firmware and update the UI. Refer to this link for instructions on flashing the MCU firmware (Use the bin and uf2 files provided in this 7z file).
 https://github.com/QIDITECH/QIDI_PLUS3/issues/27#issuecomment-2073932891
 
+**How to Upgrade the UI:**
+
+Method 1: Place the `QD_Max3_UI5.0` UI files into the `QD_Update` folder, then insert the folder into a USB drive. Plug the USB drive into the printer. On the "About" page, a "Update" button will appear. Click "Update" and follow the prompts to restart the printer. The screen will turn white and display the update progress.
+
+Method 2: Rename the UI file to `800_480.tft` and place it in the `/root` directory of the printer system. Restart the printer.
+
 **Note:** After successfully flashing the new image, please avoid upgrading firmware and hardware-related packages during `apt upgrade`. This may cause the screen control program to fail to start properly.
 
 ### Modifications to Klipper and Moonraker:
